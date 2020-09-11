@@ -1,0 +1,65 @@
+.navbar-nav > li > a {padding-top:100px !important; padding-bottom:5px !important;}
+.navbar {min-height:50px !important}
+.navbar-brand{padding-top:100px}
+.nav-link{top:100px}
+.box{
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+}
+.box .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0;
+   padding-left: 200px;
+    right: 0;
+    top: 30%; 
+    text-align: left;
+    size: 20px;
+    color: honeydew;
+    width: 100%; /* Set the width of the positioned div */
+}
+.T1
+{
+ 
+   padding-left: 725px;
+}
+.T2
+{
+    text-decoration: none;
+}
+.box1
+{
+    position: absolute;
+    z-index: 999;
+    margin: 0;
+    padding-top:310px ;
+    right: 0;
+    top: 10%; 
+    text-align: left;
+    size: 20px;
+    color: honeydew;
+    width: 100%;
+    text-decoration: none;
+}
+.box2
+{
+    position: absolute;
+    z-index: 999;
+    margin: 0;
+    padding-top:310px ;
+    right: 0;
+    top: 10%; 
+    text-align: right;
+    size: 20px;
+    color: honeydew;
+    width: 100%;
+    text-decoration: none;
+    padding-right: 5px;
+}
+.navbar-1
+{
+    padding-top: 5px;
+   position: relative;
+   padding-left: 820px;
+   color: black;
+}

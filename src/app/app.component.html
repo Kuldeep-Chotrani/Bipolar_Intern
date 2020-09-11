@@ -1,0 +1,72 @@
+<!--Navbar-->
+<mat-toolbar color="white">
+   <mat-toolbar-row>
+     <button mat-icon-button>
+       <mat-icon>camera_alt</mat-icon>
+     </button>
+    
+     <span class="menu-spacer"></span>
+   <div class="T1">
+      <div class ="T2">
+         <div class="navbar">
+         
+       <a class="T2" mat-button> Home  </a>
+       <a class="T2" mat-button> Collections </a>
+       <a class="T2" mat-button> Explore </a>
+       <mat-icon>menu</mat-icon> &nbsp;&nbsp;&nbsp;&nbsp;
+       <a class ="T2" mat-raised-button >Submit a photo </a>&nbsp;&nbsp;
+       <button mat-icon-button> <mat-icon>notifications</mat-icon> </button>&nbsp;
+       <span class="button-title"></span>
+       <button mat-icon-button>  <mat-icon>account_circle</mat-icon> </button>
+   </div>
+</div>
+</div>
+   </mat-toolbar-row>
+
+ </mat-toolbar>
+<!--image with data-->
+      <div class="box">
+         <img src="\assets\marc-thunis-Dw3APludDpE-unsplash.jpg" alt="Flying Kites" width="100%" height="600px">
+         <div class="text">
+             <h1><b>UNSPLASH</b></h1>
+             <span style="font-size: 20px"> Beautiful, free photos.</span><br>
+             <span style="font-size: 20px">Gifted by the world's most generous community of photographers</span><br />
+             <br />
+             <form>
+            
+                   <div class="box">
+                       <i class="fas fa-search h4 text-body"></i>
+                   </div>
+                   <div class="box">
+                 <a><input class="form-control form-control-lg form-control-borderless" type="search" style="width: 1000px; height: 40px; top: 10px;" placeholder="Search free high-resolution photos" ></a> 
+                  <a class ="T2" mat-raised-button >Search </a><br /><br />
+                  <a><span style="color: gray;">Trending searches:</span>  business, computer, nature, love, house</a>
+                   
+                  </div></form>
+
+                  <div class="box1">
+                     <a class="box1"><span style="color: gray;"> Photo of the day by </span>Koushik C</a>
+         
+                  </div>
+                  <div class="box2">
+                     <a class="box2"><span style="color: gray;">Read more about the </span>Unsplash License</a>
+         
+                  </div>
+         </div>
+ 
+     </div>
+  
+ <!--Tab bar navigation-->
+<nav mat-tab-nav-bar>
+            <a mat-tab-link
+            *ngFor="let link of navLinks"
+            [routerLink]="link.link"
+            routerLinkActive #rla="routerLinkActive"
+            [active]="rla.isActive">
+            {{link.label}}
+            </a>
+            <a class="navbar-1"><mat-icon>view_module</mat-icon></a>
+            </nav>
+<router-outlet></router-outlet>  
+
+
